@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "10px",
+              sm: "10px",
+              lg: "50px",
+              xl: "100px",
+              "2xl": "150px",
+            },
+          },
+          fontFamily: {
+            rob: ["Roboto"],
+            fred: ["Fredoka"],
+            hind: ["Hind Madurai"],
+          },
+          extend: {
+            colors: {
+              white: "#FAFAFA",
+              pink: "#f7e9ed",
+              red: "#D23166",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-rob">
+    <header class="w-full bg-pink">
+      <div class="container flex flex-row justify-between items-center py-4">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/7535/e5f0/a2c54d78fe23185914aad6ac5ea4a6fc?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YkI1ZpfrIwHki-JhnosKQxm7xqkVyLDGPwp5OYNOcmHJu3PsPyVzKgUDkn2lJSZMlRNqaskZGRdJ3jwivf7DuArg0c4Ybq~W4oiilo1D1PSpifPZjWeED3ljnWYP78VBy25EWOVkzZlGv5aNhMVJ7V8V-ZCS3JSW9ITRTxIyjl95n4fDPFsisHjx5RaPagRUinR0hQ7y1luwFrTrE6GkEwFBW2OVpsDUlBMIPkZ0MGpoeJWAW5bb5ealFtQ8RIFKqWpE8SxDcS48fI6RuPqZCGNES5WiGbTAP59Y2R449hDWg9MdSfTGVCmqMY9VwDZ3mmpFsagxwEiFMAGaa83khg__"
+          alt="logo"
+          width="50"
+        />
+        <ul class="hidden md:flex flex-row items-center gap-7">
+          <li class="text-gray-600 hover:text-red cursor-pointer">Home</li>
+          <li class="text-gray-600 hover:text-red cursor-pointer">Product</li>
+          <li class="text-gray-600 hover:text-red cursor-pointer">Pricing</li>
+          <li class="text-gray-600 hover:text-red cursor-pointer">
+            Testimonials
+          </li>
+          <li class="text-gray-600 hover:text-red cursor-pointer">
+            Contact Us
+          </li>
+        </ul>
+        <button class="hidden md:flex py-4 px-[30px]  bg-red text-white rounded-xl btn-1  ">
+          Buy Now
+        </button>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+          alt="burger"
+          width="30"
+          class="flex md:hidden"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="w-full bg-pink py-36 md:py-10">
+        <div
+          class="container flex flex-row justify-center md:justify-between items-center"
+        >
+          <div
+            class="md:w-[740px] flex flex-col gap-3 md:gap-7 items-center text-center md:text-start md:items-start"
+          >
+            <span class="font-semibold">Sweet fun, full of milk.</span>
+            <h1 class="text-3xl 2xl:text-7xl font-fred font-semibold">
+              Feel inside cold with our delicious
+              <span class="text-red text-6xl">ice-cream.</span>
+            </h1>
+            <div class="md:w-[550px]">
+              <p class="text-gray-600 text-lg">
+                Some food has looked so awful that it's looked like something
+                that the dog's brought home, yet after one mouthful I've been
+                left eating my thoughts, my words.
+              </p>
+            </div>
+            <button class="py-1  px-[30px]   bg-red text-white rounded-xl btn-1 ">
+              Buy Now
+            </button>
+          </div>
+          <div class="hidden md:flex">
+            <img
+              width="350"
+              src="./images/3ice.png"
+              alt="ice-cream"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="container py-10 flex flex-row gap-10 justify-center flex-wrap xl:flex-nowrap"
+      >
+        <div
+          class="p-7 flex flex-col w-[300px] items-center text-center shadow-lg gap-3"
+        >
+          <div>
+            <img src="./lorry.svg" alt="lorry" />
+          </div>
+          <h3 class="font-semibold text-lg">Free Shipping</h3>
+          <p class="text-gray-600 text-sm">
+            Last Chance! Free shipping on all orders ends today.
+          </p>
+        </div>
+        <div
+          class="p-7 flex flex-col w-[300px] items-center text-center shadow-lg gap-3"
+        >
+          <div>
+            <img src="./images/pop.svg" alt="lorry" />
+          </div>
+          <h3 class="font-semibold text-lg">Quick Packaging</h3>
+          <p class="text-gray-600 text-sm">
+            Last Chance! Free shipping on all orders ends today.
+          </p>
+        </div>
+        <div
+          class="p-7 flex flex-col w-[300px] items-center text-center shadow-lg gap-3"
+        >
+          <div>
+            <img src="./images/money.svg" alt="lorry" />
+          </div>
+          <h3 class="font-semibold text-lg">100% Money Back</h3>
+          <p class="text-gray-600 text-sm">
+            Last Chance! Free shipping on all orders ends today.
+          </p>
+        </div>
+        <div
+          class="p-7 flex flex-col w-[300px] items-center text-center shadow-lg gap-3"
+        >
+          <div>
+            <img src="./images/traktor.svg" alt="lorry" />
+          </div>
+          <h3 class="font-semibold text-lg">Fast Delivery</h3>
+          <p class="text-gray-600 text-sm">
+            Last Chance! Free shipping on all orders ends today.
+          </p>
+        </div>
+      </section>
+      <section class="w-full bg-pink py-10 ">
+        <div
+          class="container flex  items-center "
+        >
+          <div
+            class="w-[560px] flex flex-col items-center justify-between text-center md:text-start md:items-start gap-5"
+          >
+            <h3 class="font-semibold text-2xl md:text-6xl">
+              Brown Sugar Oatmea
+            </h3>
+            <p class="font-normal w-[450px]  tracking-normal">
+              Together with McDonald’s, Burger King has grown to become
+              synonymous with burgers in the US.Together with McDonald’s, Burger
+              King has grown to become synonymous.
+            </p>
+            <button class=" py-3 px-[30px]   bg-red text-white rounded-xl btn-2">
+              See details
+            </button>
+          </div>
+          <div class="hidden md:flex  ">
+            <img src="./images/Group 82.png" alt=""  class="pl-20">
+          </div>
+        </div>
+      </section>
+      <section class="container pt-20">
+        <h1 class="font-hind text-center font-semibold text-4xl pb-5">
+          Our Product
+        </h1>
+        <ul class="font-rob flex gap-10 items-center justify-center">
+          <li
+            class="relative before:absolute before:content-[''] before:h-[2px] before:w-1/3 before:bg-pink-800"
+          >
+            ICE CREAM
+          </li>
+          <li class="hidden lg:flex">CAYENNE CHOCOLATE</li>
+          <li class="hidden lg:flex">CAKE BATTER</li>
+          <li class="hidden lg:flex">CANDY CANE</li>
+          <li class="hidden lg:flex">PLATTERS</li>
+          <li class="hidden lg:flex">DESSERT</li>
+        </ul>
+        <div>
+          <div
+            class="items-center justify-center gap-20 flex-col flex lg:flex-row"
+          >
+            <img src="/images/Rectangle 74 (1).png" alt="" />
+            <div
+              class="w-[100%] lg:w-[400px] md:w-[450px] sm:w-[100%] flex flex-col items-center text-center md:text-start md:items-start gap-2"
+            >
+              <span class="font-bold text-2xl md:text-4xl">Brown bread</span>
+              <p class="font-normal text-base">
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a pioneer in the healthy fast food scene.
+              </p>
+              <div class="flex gap-2 items-center flex-row">
+                <span class="font-medium text-2xl font-hind">$19.55</span>
+                <s class="font-hind font-normal text-gray-500">$22.55</s>
+              </div>
+              <div class="flex items-center">
+                <button class="md:flex py-1  px-[30px]   bg-red text-white rounded-xl btn-1 ">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-center justify-center gap-20  flex  flex-col-reverse lg:flex-row  "
+          >
+            <div
+              class="w-[100%] lg:w-[400px] md:w-[450px] sm:w-[100%]   flex-col items-start  md: flex   gap-5"
+            >
+              <span class="font-bold text-2xl md:text-4xl "
+                >Cayenne chocolate</span
+              >
+              <p class="font-normal text-base">
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a pioneer in the healthy fast food scene.
+              </p>
+              <div class="flex gap-2 items-center flex-row">
+                <span class="font-medium text-2xl font-hind">$19.55</span>
+                <s class="font-hind font-normal text-gray-500">$22.55</s>
+              </div>
+              <div class="flex items-center">
+                <button class="md:flex py-1  px-[30px]   bg-red text-white rounded-xl btn-1 ">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <img src="/images/lemon.ice.png" alt="" />
+          </div>
+          <div
+            class="items-center justify-center gap-20 flex-col flex lg:flex-row"
+          >
+            <img src="/images/qora.png" alt="" />
+            <div
+              class="w-[100%] lg:w-[400px] md:w-[450px] sm:w-[100%] flex flex-col items-center text-center md:text-start md:items-start gap-5"
+            >
+              <span class="font-bold text-2xl md:text-4xl">Sweet corn</span>
+              <p class="font-normal text-base">
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a pioneer in the healthy fast food scene.
+              </p>
+              <div class="flex gap-2 items-center flex-row">
+                <span class="font-medium text-2xl font-hind">$19.55</span>
+                <s class="font-hind font-normal text-gray-500">$22.55</s>
+              </div>
+              <div class="flex items-center">
+                <button class="md:flex py-1  px-[30px]   bg-red text-white rounded-xl btn-1 ">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex gap-32 justify-between pt-28 items-center md:items-center md:justify-center mb-20"
+          >
+            <div
+              class="flex flex-col gap-10 items-center md:items-center md:justify-center"
+            >
+              <div class="flex items-center gap-3">
+                <img src="/images/]devushk.svg" alt="" class="" />
+                <div class="flex flex-col gap-2">
+                  <span class="font-rob font-medium text-2xl"
+                    >Adele A. McNeill</span
+                  >
+                  <span class="font-rob text-xs">AMIRICAN</span>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="/images/Group (7).png"
+                  alt=" galka"
+                  class="w-[10.97px] h-[10px] absolute top-1 -left-3"
+                />
+                <p class="w-[322px] text-clip">
+                  Thanks a lot for the prompt service. Really appreciate.
+                  Excellence taste in Every Bite.Add a joy of best Taste. Foodie
+                  Moments.
+                </p>
+                <img
+                  src="/images/right.png"
+                  alt=""
+                  class="w-[10.97px] h-[10px] absolute bottom-3 right-12"
+                />
+              </div>
+              <div class="flex flex-row gap-5">
+                <img src="./images/right-arrow 2.svg" alt="" />
+                <img src="./images/maksim.svg" alt="" />
+                <img src="./images/devuchka1.svg" alt="" />
+                <img src="./images/liitledebuchka.svg" alt="" />
+                <img src="./images/right-arrow 1.svg" alt="" />
+              </div>
+            </div>
+            <div class="hidden lg:flex">
+              <img src="/images/3rojka.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full bg-pink">
+        <div class="flex items-center justify-center gap-32 container">
+          <div class="hidden md:flex w-1/3">
+            <img src="/images/pink,ice.png" alt="" class="pt-[50px]" />
+          </div>
+          <div class="flex items-center justify-between w-2/3">
+            <div class="flex flex-col gap-8 w-full">
+              <h2 class="font-rob text-4xl font-medium">
+                Simple Way To Order Your Food
+              </h2>
+              <p
+                class="font-normal font-rob text-lg md:items-center md:justify-center"
+              >
+                Some food has looked so awful that it's looked like something
+                that the dog's brought home, yet after one mouthful I've been
+                left eating my thoughts.
+              </p>
+              <ul class="flex flex-col gap-6">
+                <li class="flex flex-row gap-4">
+                  <img src="./images/Group 91.svg" alt="" class="bgwhite" />
+                  <span>Select Your Food</span>
+                </li>
+                <li class="flex flex-row gap-3">
+                  <img
+                    src="./images/korzina.svg"
+                    alt=""
+                    class="bgwhite w-[34px]"
+                  />
+                  <span>Add To Cart</span>
+                </li>
+                <li class="flex flex-row gap-3">
+                  <img
+                    src="./images/handruchka.svg"
+                    alt=""
+                    class="bgwhite1 w-[34px]"
+                  />
+                  <span>Order Your Food</span>
+                </li>
+              </ul>
+              <div class="flex flex-col md:flex-col items-start justify-start">
+                <img
+                  src="./images/Rectangle 95.png"
+                  alt=""
+                  class="w-[200px] h"
+                />
+                <img src="./images/app.store.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pt-20 mb-10">
+        <div class="flex flex-col items-center justify-center">
+          <div class="w-full md:w-1/3 text-center">
+            <h1 class="font-rob font-medium text-4xl">
+              Have Question in Mind? Let us help you
+            </h1>
+          </div>
+          <div class="pt-10 flex flex-col lg:flex-col gap-10">
+            <form class="flex flex-col md:flex-row">
+              <input
+                type="text"
+                class="bg-black border-none px-10 py-3"
+                placeholder="Enter your question"
+              />
+              <button
+                class="text-white bg-red rounded-r px-5 py-3 hover:bg-red-100 hover:text-red-50 p-0 outline-none focus:border-none"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black py-20 rounded-t-3xl">
+      <div
+        class="container flex flex-col md:flex-row lg:flex-row pl-10 gap-10 justify-between items-start lg:items-end text-start lg:text-start"
+      >
+        <div class="flex flex-col items-start gap-10 lg:hidden">
+          <div class="flex flex-col gap-3 items-start">
+            <div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/7535/e5f0/a2c54d78fe23185914aad6ac5ea4a6fc?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YkI1ZpfrIwHki-JhnosKQxm7xqkVyLDGPwp5OYNOcmHJu3PsPyVzKgUDkn2lJSZMlRNqaskZGRdJ3jwivf7DuArg0c4Ybq~W4oiilo1D1PSpifPZjWeED3ljnWYP78VBy25EWOVkzZlGv5aNhMVJ7V8V-ZCS3JSW9ITRTxIyjl95n4fDPFsisHjx5RaPagRUinR0hQ7y1luwFrTrE6GkEwFBW2OVpsDUlBMIPkZ0MGpoeJWAW5bb5ealFtQ8RIFKqWpE8SxDcS48fI6RuPqZCGNES5WiGbTAP59Y2R449hDWg9MdSfTGVCmqMY9VwDZ3mmpFsagxwEiFMAGaa83khg__"
+                alt="logo"
+                width="50"
+              />
+            </div>
+            <div class="flex flex-col w-[207px]">
+              <p class="text-white hover:text-red hover:duration-300">
+                Some food has looked so awful that it's looked like something
+                that the dog's brought home.
+              </p>
+              <spa class="text-white">Fllow Us</spa>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img src="./images/twitter 1.svg" alt="" />
+              <img src="./images/instagram 1.svg" alt="" />
+              <img src="./images/linkedin 1.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <ul class="flex flex-col mb-7 gap-1">
+              <li class="text-white">Delivery Information</li>
+              <li class="text-white">Privacy Policy</li>
+              <li class="text-white">Terms & Condition</li>
+              <li class="text-white">Search Terms</li>
+              <li class="text-white">Order & Return</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col items-start gap-10 lg:hidden">
+          <div class="flex">
+            <ul class="flex flex-col gap-1">
+              <li class="text-white">Home</li>
+              <li class="text-gray-500">Product</li>
+              <li class="text-gray-500">Blog</li>
+              <li class="text-gray-500">Pricing</li>
+              <li class="text-gray-500">Testimonials</li>
+              <li class="text-gray-500">Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <div class="flex flex-col items-start justify-start pb-5">
+              <span class="text-white">Newsletter</span>
+              <div class="pt-4 flex flex-col lg:flex-col gap-10">
+                <form class="flex flex-row">
+                  <input
+                    type="text"
+                    class="bg-black border-none px-10 py-3"
+                    placeholder="Enter your question"
+                  />
+                  <button
+                    class="text-white bg-red rounded-r px-5 py-3 p-0 hover:bg-black hover:text-white outline-none focus:border-noneduration-300"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <div class="flex flex-row gap-4 pt-5">
+                <img src="./images/blue.svg" alt="" />
+                <img src="./images/mastercard.svg" alt="" />
+                <img src="./images/visa.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden lg:flex items-end flex-row justify-between w-full container"
+      >
+        <div class="flex flex-col gap-3 items-start">
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/7535/e5f0/a2c54d78fe23185914aad6ac5ea4a6fc?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YkI1ZpfrIwHki-JhnosKQxm7xqkVyLDGPwp5OYNOcmHJu3PsPyVzKgUDkn2lJSZMlRNqaskZGRdJ3jwivf7DuArg0c4Ybq~W4oiilo1D1PSpifPZjWeED3ljnWYP78VBy25EWOVkzZlGv5aNhMVJ7V8V-ZCS3JSW9ITRTxIyjl95n4fDPFsisHjx5RaPagRUinR0hQ7y1luwFrTrE6GkEwFBW2OVpsDUlBMIPkZ0MGpoeJWAW5bb5ealFtQ8RIFKqWpE8SxDcS48fI6RuPqZCGNES5WiGbTAP59Y2R449hDWg9MdSfTGVCmqMY9VwDZ3mmpFsagxwEiFMAGaa83khg__"
+              alt="logo"
+              width="50"
+            />
+          </div>
+          <div class="flex flex-col w-[207px]">
+            <p class="text-white hover:text-red hover:duration-300">
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home.
+            </p>
+            <spa class="text-white">Fllow Us</spa>
+          </div>
+          <div class="flex flex-row gap-5">
+            <img src="./images/twitter 1.svg" alt="" />
+            <img src="./images/instagram 1.svg" alt="" />
+            <img src="./images/linkedin 1.svg" alt="" />
+          </div>
+        </div>
+        <div class="flex">
+          <ul class="flex flex-col gap-1">
+            <li class="text-white">Home</li>
+            <li class="text-gray-500">Product</li>
+            <li class="text-gray-500">Blog</li>
+            <li class="text-gray-500">Pricing</li>
+            <li class="text-gray-500">Testimonials</li>
+            <li class="text-gray-500">Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-col mb-7 gap-1">
+            <li class="text-white">Delivery Information</li>
+            <li class="text-white">Privacy Policy</li>
+            <li class="text-white">Terms & Condition</li>
+            <li class="text-white">Search Terms</li>
+            <li class="text-white">Order & Return</li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex flex-col items-start justify-start pb-5">
+            <span class="text-white">Newsletter</span>
+            <div class="pt-4 flex flex-col lg:flex-col gap-10">
+              <form class="flex flex-row">
+                <input
+                  type="text"
+                  class="bg-black border-none px-10 py-3"
+                  placeholder="Enter your question"
+                />
+                <button
+                  class="text-white bg-red py-1  px-[30px]   bg-red  border-none rounded-xl btn-1  p-0 hover:bg-black hover:text-white outline-none focus:border-noneduration-300"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <div class="flex flex-row gap-4 pt-5">
+              <img src="./images/blue.svg" alt="" />
+              <img src="./images/mastercard.svg" alt="" />
+              <img src="./images/visa.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
